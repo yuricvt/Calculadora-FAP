@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../assets/calculadora.css">
+    <script src="../dist/calculadora.js" defer></script>
+</head>
+<body>
+    <div class="main">
+        <div class="calc">
+            <h2>Calculadora</h2>
+            <div class="keyboard">
+                <input type="text" id="visor" disabled />
+            
+            <button onclick="addNum('7')">7</button>
+        <button onclick="addNum('8')">8</button>
+        <button onclick="addNum('9')">9</button>
+        <button class="Operator" onclick="addOp('+')">+</button>
+
+        <button onclick="addNum('4')">4</button>
+        <button onclick="addNum('5')">5</button>
+        <button onclick="addNum('6')">6</button>
+        <button class="Operator" onclick="addOp('-')">-</button>
+
+        <button onclick="addNum('1')">1</button>
+        <button onclick="addNum('2')">2</button>
+        <button onclick="addNum('3')">3</button>
+        <button class="Operator" onclick="addOp('*')">*</button>
+
+        <button id="zero" onclick="addNum('0')">0</button>
+        <button class="Operator" onclick="addOp('/')">/</button>
+        <button onclick="clearScreen()">C</button> 
+        <button id="clrLast" onclick="deleteLastCharacter()">⌫</button>
+        <button class="Operator" onclick="calculate()">=</button>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
